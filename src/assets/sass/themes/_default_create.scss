@@ -1,0 +1,65 @@
+.create {
+    position: relative;
+    background-image: url("../assets/images/gaming-pattern.png");
+    .create_contents {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 85vw;
+        height: 70vh;
+        .create_table {
+            background: $color-white;
+            border: 1px solid;
+            table {
+                width: 85vw;
+                background: $color-white;
+                border-collapse: collapse;
+                tbody tr {
+                    cursor: pointer;
+                }
+                th,
+                td {
+                    border-bottom: 1px solid #eee;
+                    text-align: center;
+                }
+                th {
+                    background-color: #d2d0e8;
+                    border-bottom: 2px solid #7366b4;
+                }
+                .create_problemStatement {
+                    border-right: 1px solid #eee;
+                    border-left: 1px solid #eee;
+                }
+            }
+        }
+    }
+}
+
+.is-active {
+    border: 3px solid #0e8bdf;
+    background: #fffef3;
+}
+
+.icon {
+    position: absolute;
+    top: calc(50% - 0.5em);
+    right: 0.5rem;
+}
+
+.float {
+    float: right;
+}
+
+// ----- ボタンの色 -----
+
+.add_color {
+    background: #f5cba8;
+}
+
+.delete_color {
+    background: #d5edd5;
+}
+
+// ------- ボタン色ここまで -------

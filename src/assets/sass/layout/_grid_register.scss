@@ -1,0 +1,29 @@
+.createAccount {
+    validation {
+        margin: auto;
+    }
+    .form {
+        margin: auto;
+        h1 {
+            margin-bottom: 40px;
+        }
+        .form_input {
+            margin: 0 auto;
+            label {
+                margin-bottom: 5px;
+            }
+            input[type="email"],
+            input[type="password"] {
+                padding: 5px;
+                margin-bottom: 20px;
+            }
+        }
+        .send_data {
+            margin: 0 auto;
+            button {
+                padding: 10px;
+                margin-top: 30px;
+            }
+        }
+    }
+}

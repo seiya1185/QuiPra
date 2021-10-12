@@ -1,0 +1,49 @@
+.category {
+    .category_contents {
+        margin: 160px auto;
+        .category_heading {
+            margin-bottom: 25px;
+        }
+        .category_table {
+            table {
+                th {
+                    padding: 1.25em 1em;
+                    @media (max-width: 480px) {
+                        padding: 1.5em 0.9em;
+                    }
+                }
+                td {
+                    padding: 0.85em 1em;
+                }
+                .category_name {
+                    @media (max-width: 480px) {
+                        padding: 1.3em 1.5em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// ------- モーダルのCSS --------
+#overlay {
+    #modal_content {
+        .add_form,
+        .update_form {
+            label {
+                margin-bottom: 10px;
+            }
+            input[type="text"] {
+                padding: 10px;
+                margin-bottom: 25px;
+            }
+            select {
+                margin-bottom: 25px;
+            }
+            button {
+                padding: 5px 10px;
+                margin: 60px 0;
+            }
+        }
+    }
+}

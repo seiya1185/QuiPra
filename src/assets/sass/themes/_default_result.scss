@@ -1,0 +1,68 @@
+.result {
+    height: 1100px;
+    @media (max-width: 1450px) {
+        height: 900px;
+    }
+    background-image: url("../assets/images/gaming-pattern.png");
+    position: relative;
+    .result_content {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background: #fff;
+        border: 1px solid #999999;
+        border-radius: 10px;
+        .result_screen {
+            .result_number {
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                height: 14vh;
+                padding: 0;
+                margin: 0;
+                li {
+                    border: 1px solid #999999;
+                }
+            }
+        }
+        .chart_size {
+            width: 50vw;
+            height: 50vh;
+        }
+        .option_button {
+            text-align: center;
+            button {
+                background: #ffed22;
+                @include rem(16);
+            }
+        }
+    }
+}
+
+.buttons {
+    &-enter {
+        opacity: 0;
+    }
+    &-enter-active {
+        transition: opacity 0.5s;
+    }
+    &-enter-to {
+        opacity: 1;
+    }
+    &-leave {
+        opacity: 1;
+    }
+    &-leave-to {
+        opacity: 0;
+    }
+}
+
+.red {
+    color: red;
+}
+.blue {
+    color: blue;
+}

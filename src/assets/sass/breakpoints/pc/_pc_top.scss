@@ -1,0 +1,22 @@
+.main {
+    .main_parts {
+        .main_text {
+            h1 {
+                @include rem(40);
+            }
+            img {
+                width: 29vw;
+            }
+        }
+        .main_quiz {
+            @include rem(24);
+        }
+    }
+}
+
+.create_button {
+    @include rem(20);
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 1rem 4rem;
+}

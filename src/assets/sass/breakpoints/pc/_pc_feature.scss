@@ -1,0 +1,61 @@
+.feature {
+    .feature_heading {
+        h2 {
+            @include rem(33);
+            &:before {
+                width: 50px;
+                height: 3px;
+                top: 50%;
+                left: 24vw;
+            }
+            @media (min-width: 1400px) {
+                &:before {
+                    left: 30vw;
+                }
+            }
+            &:after {
+                width: 50px;
+                height: 3px;
+                top: 50%;
+                right: 24vw;
+            }
+            @media (min-width: 1400px) {
+                &:after {
+                    right: 30vw;
+                }
+            }
+        }
+        p {
+            @include rem(20);
+        }
+    }
+    .feature_contents {
+        .feature_contents_part {
+            width: 350px;
+            height: 330px;
+            @media (min-width: 1270px) {
+                width: 380px;
+            }
+            .part__heading {
+                @include rem(14);
+                @media (min-width: 1270px) {
+                    @include rem(15);
+                }
+                .heading {
+                    .emphasis {
+                        @include rem(20);
+                        @media (min-width: 1270px) {
+                            @include rem(22);
+                        }
+                    }
+                }
+            }
+            .part__body {
+                @include rem(14);
+                @media (min-width: 1270px) {
+                    @include rem(15);
+                }
+            }
+        }
+    }
+}

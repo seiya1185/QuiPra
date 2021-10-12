@@ -1,0 +1,34 @@
+.ask_questions {
+    height: 85vh;
+    .ask_questions_content {
+        width: 90%;
+        height: 78%;
+        .quiz_content {
+            .time {
+                top: 20px;
+            }
+            .problem_statement {
+                width: 85%;
+            }
+        }
+    }
+}
+
+// ------- モーダルのCSS --------
+#overlay {
+    #modal_content {
+        .select_answer {
+            .select_letter {
+                @include rem(28);
+                letter-spacing: 5px;
+            }
+        }
+        .select_option {
+            input[type="button"] {
+                height: 70px;
+                width: 70px;
+                @include rem(20);
+            }
+        }
+    }
+}

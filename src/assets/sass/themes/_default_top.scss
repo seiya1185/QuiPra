@@ -1,0 +1,41 @@
+.main {
+    .main_parts {
+        position: relative;
+        background: $color-accent1;
+        z-index: 3;
+        height: 65vh;
+        .main_quiz {
+            text-decoration: underline;
+        }
+        .white_triangle {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            z-index: -10;
+            border: 0 solid transparent;
+            border-top-width: 55vh;
+            border-bottom-width: 0;
+            border-right: 90vw solid #fff;
+            overflow: hidden;
+        }
+    }
+    .main_scroll {
+        position: relative;
+        background: $color-sub;
+        height: 32vh;
+        .white_triangle2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border: 0 solid transparent;
+            border-left-width: 90vw;
+            border-right-width: 0;
+            border-top: 32vh solid #fff;
+            overflow: hidden;
+        }
+    }
+}

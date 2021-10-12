@@ -1,0 +1,49 @@
+.category {
+    height: 880px;
+    .category_contents {
+        .category_table {
+            width: 85.5vw;
+            height: 472px;
+            table {
+                th {
+                    @include rem(14);
+                }
+                td {
+                    @include rem(10);
+                }
+                .category_name {
+                    @include rem(12);
+                }
+                .category_genre {
+                    @include rem(10);
+                }
+            }
+        }
+    }
+}
+
+// ------- モーダルのCSS --------
+#overlay {
+    #modal_content {
+        .close_modal {
+            top: 80px;
+            right: 30px;
+            @include rem(60);
+        }
+        .add_form,
+        .update_form {
+            label {
+                @include rem(18);
+            }
+            input[type="text"] {
+                width: 320px;
+                @include rem(16);
+            }
+            select {
+                width: 200px;
+                height: 40px;
+                @include rem(16);
+            }
+        }
+    }
+}

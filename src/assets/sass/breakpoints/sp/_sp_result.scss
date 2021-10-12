@@ -1,0 +1,22 @@
+.result {
+    height: 900px;
+    .result_content {
+        width: 88vw;
+        height: 88vh;
+        .result_screen {
+            .result_number {
+                li {
+                    @include rem(11);
+                    span {
+                        @include rem(13);
+                    }
+                }
+            }
+        }
+        .option_button {
+            button {
+                @include rem(14);
+            }
+        }
+    }
+}

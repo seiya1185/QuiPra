@@ -1,0 +1,54 @@
+.feature {
+    .feature_heading {
+        h2 {
+            @include rem(23);
+            @media (min-width: 430px) {
+                @include rem(25);
+            }
+            &:before {
+                width: 20px;
+                height: 3px;
+                top: 50%;
+                left: 2vw;
+                @media (min-width: 430px) {
+                    width: 25px;
+                    left: 3vw;
+                }
+            }
+            &:after {
+                width: 20px;
+                height: 3px;
+                top: 50%;
+                right: 2vw;
+                @media (min-width: 430px) {
+                    width: 25px;
+                    right: 3vw;
+                }
+            }
+        }
+        p {
+            @include rem(16);
+            @media (min-width: 390px) {
+                @include rem(18);
+            }
+        }
+    }
+    .feature_contents {
+        .feature_contents_part {
+            margin: 0 auto 60px;
+            width: 347px;
+            height: 330px;
+            .part__heading {
+                @include rem(14);
+                .heading {
+                    .emphasis {
+                        @include rem(21);
+                    }
+                }
+            }
+            .part__body {
+                @include rem(14);
+            }
+        }
+    }
+}

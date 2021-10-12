@@ -1,0 +1,48 @@
+.use {
+    .use_heading {
+        h2 {
+            @include rem(28);
+            &:before {
+                width: 23px;
+                height: 3px;
+                top: 50%;
+                left: 4vw;
+                @media (min-width: 430px) {
+                    width: 25px;
+                    left: 5vw;
+                }
+            }
+            &:after {
+                width: 23px;
+                height: 3px;
+                top: 50%;
+                right: 4vw;
+                @media (min-width: 430px) {
+                    width: 25px;
+                    right: 5vw;
+                }
+            }
+        }
+    }
+    .use_contents {
+        .use_content_part {
+            .use_content_part_text {
+                width: 83%;
+                @include rem(15);
+            }
+            .use_content_part_gif {
+                display: none
+            }
+        }
+    }
+}
+
+.parent {
+    text-align: center
+}
+
+.category_button {
+    @include rem(13);
+    font-weight: 600;
+    line-height: 1.5;
+}

@@ -1,0 +1,50 @@
+.createAccount {
+    position: relative;
+    width: 100%;
+    height: 76vh;
+    .validation {
+        position: absolute;
+        top: 90px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 96.5vw;
+        text-align: center;
+        @include rem(13);
+        color: $color-str;
+    }
+    .form {
+        position: absolute;
+        top: 230px;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 85vw;
+        height: 70vh;
+        h1 {
+            @include rem(30);
+            text-align: center;
+        }
+        .form_input {
+            width: 280px;
+            label {
+                display: block;
+                @include rem(18);
+            }
+            input[type="email"],
+            input[type="password"] {
+                width: 280px;
+                height: 30px;
+            }
+        }
+        .send_data {
+            width: 150px;
+            button {
+                text-align: center;
+                width: 150px;
+                background-color: #ff465b;
+                color: $color-white;
+            }
+        }
+    }
+}

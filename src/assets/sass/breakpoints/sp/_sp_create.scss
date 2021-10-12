@@ -1,0 +1,27 @@
+.create {
+    height: 1200px;
+    .create_contents {
+        .create_table {
+            width: 85.6vw;
+            height: 395px;
+            table {
+                th {
+                    @include rem(16);
+                }
+                td {
+                    @include rem(12);
+                }
+                .create_problemStatement {
+                    @include rem(12);
+                }
+                .create_answer {
+                    @include rem(10);
+                }
+            }
+        }
+    }
+}
+
+.float {
+    float: left;
+}

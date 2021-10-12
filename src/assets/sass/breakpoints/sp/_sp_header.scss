@@ -1,0 +1,15 @@
+.header {
+    .logo img {
+        width: 170px;
+    }
+    .menu {
+        .pc_menu {
+            display: none;
+        }
+    }
+}
+
+.header.scroll-nav {
+    background: #fff;
+    border-bottom: 1px solid #999;
+}

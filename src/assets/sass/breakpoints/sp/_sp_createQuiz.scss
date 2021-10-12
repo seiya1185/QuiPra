@@ -1,0 +1,54 @@
+.createQuiz {
+    height: 1000px;
+    .createQuiz_content {
+        width: 90%;
+        .create_problemStatement {
+            textarea {
+                @include rem(16);
+            }
+        }
+        .create_answer {
+            width: 70%;
+            input {
+                @include rem(16);
+            }
+        }
+        .create_option {
+            .selected-items {
+                width: 100%;
+                .add_button {
+                    @include rem(16);
+                }
+                .selected-item {
+                    @include rem(16);
+                }
+            }
+        }
+    }
+}
+
+label {
+    display: block;
+    @include rem(16);
+}
+
+// ------- モーダルのCSS --------
+#overlay {
+    #modal_content {
+        .change_option,
+        .add_option {
+            label {
+                @include rem(16);
+            }
+            input[type="text"] {
+                height: 60px;
+                width: 60px;
+                @include rem(18);
+            }
+            button {
+                width: 100px;
+                @include rem(16);
+            }
+        }
+    }
+}

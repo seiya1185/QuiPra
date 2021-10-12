@@ -1,0 +1,77 @@
+.createQuiz {
+    .createQuiz_content {
+        .create_problemStatement {
+            margin-bottom: 25px;
+            textarea {
+                padding: 10px;
+            }
+        }
+        .create_answer {
+            margin: 0 auto 25px;
+            input {
+                padding: 10px;
+            }
+        }
+        .create_option {
+            label {
+                margin-bottom: 10px;
+            }
+            .selected-items {
+                .selected-item {
+                    margin: 0 0 10px;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .create_button {
+            margin: 50px 0;
+            button {
+                padding: 10px 15px;
+            }
+        }
+    }
+}
+
+.selected-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+// ------- モーダルのCSS --------
+#overlay {
+    /* 画面の中央に要素を表示させる設定 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    #modal_content {
+        .change_option,
+        .add_option {
+            .correct_option {
+                margin-bottom: 40px;
+            }
+            .error_option {
+                margin-bottom: 20px;
+                .margin {
+                    margin: 0 80px;
+                }
+            }
+            label {
+                margin-bottom: 10px;
+            }
+            input[type="text"] {
+                padding: 10px;
+            }
+            button {
+                margin: 60px 30px 0;
+                @media (max-width: 480px) {
+                    margin: 60px 20px 0;
+                }
+            }
+        }
+    }
+}

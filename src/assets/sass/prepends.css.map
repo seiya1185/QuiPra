@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "prepends.scss",
+        "abstracts/_variables.scss",
+        "abstracts/_functions.scss",
+        "abstracts/_mixins.scss"
+    ],
+    "names": [],
+    "file": "prepends.css"
+}

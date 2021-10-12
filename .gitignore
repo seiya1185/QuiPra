@@ -1,7 +1,11 @@
 .DS_Store
 node_modules
 /dist
-
+main.js
+.firebaserc
+firebase.json
+firebase.indexes.json
+firebase.rules
 
 # local env files
 .env.local

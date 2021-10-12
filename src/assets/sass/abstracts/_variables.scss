@@ -1,0 +1,26 @@
+//ベース色
+$color-main: #fffac0;
+$color-sub: #ffd1c2;
+$color-accent1: #ffed22;
+
+//文字色
+$color-text: #353535;
+$color-white: #ffffff;
+$color-str: #c7254e;
+$color-tw: #1c96e0;
+$color-fb: #1a76f2;
+
+//透明度
+$opacity: 0.6;
+
+//フォント
+$font-main: "Noto Sans JP", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック",
+    "MS PGothic", sans-serif;
+
+//サイズ
+$layout-width-inner: 1080px;
+$breakpoints: (
+    "sp": "screen and (max-width: 480px)",
+    "tab": "screen and (min-width: 480px) and (max-width: 1080px)",
+    "pc": "screen and (min-width: 1080px)"
+);

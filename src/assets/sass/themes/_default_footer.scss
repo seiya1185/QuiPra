@@ -1,0 +1,12 @@
+footer {
+    background: #ffd1c2;
+    .footer_text {
+        .footer_text_use {
+            color: $color-text;
+            font-weight: bold;
+        }
+        .footer_text_copyright {
+            text-align: center;
+        }
+    }
+}

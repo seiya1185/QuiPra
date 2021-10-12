@@ -1,0 +1,89 @@
+.feature {
+    background-image: url("../assets/images/gaming-pattern.png");
+    .feature_heading {
+        text-align: center;
+        &:after {
+            display: block;
+            position: absolute;
+            left: 50%;
+            border-top: 45px solid #fff;
+            border-right: 128.5px solid transparent;
+            border-bottom: 0 solid transparent;
+            border-left: 128.5px solid transparent;
+            content: "";
+            transform: translate3d(-50%, 0, 0);
+        }
+        h2 {
+            position: relative;
+            &:before {
+                content: "";
+                display: block;
+                background-color: #ff7041;
+                position: absolute;
+            }
+            &:after {
+                content: "";
+                display: block;
+                background-color: #ff7041;
+                position: absolute;
+            }
+        }
+    }
+    .feature_contents {
+        background-color: #e2e2e2;
+        .feature_contents_part {
+            position: relative;
+            background-color: #fff;
+            .part__number {
+                position: absolute;
+                top: -21px;
+                left: 18px;
+                &:before {
+                    position: absolute;
+                    top: -18px;
+                    left: -6px;
+                    content: "POINT";
+                    @include rem(10);
+                    font-weight: bold;
+                }
+            }
+            .part__icon {
+                text-align: center;
+            }
+            .part__heading {
+                line-height: 1.6;
+                text-align: center;
+                .heading {
+                    .emphasis {
+                        .emphasis__quote {
+                            position: relative;
+                            top: -4px;
+                            color: #b7b7b7;
+                        }
+                    }
+                }
+            }
+            .part__body {
+                line-height: 2;
+            }
+        }
+    }
+}
+
+.number {
+    width: 48px;
+    height: 35px;
+}
+.icon {
+    width: 88px;
+    height: 75px;
+}
+.color1 {
+    color: #5fa300;
+}
+.color2 {
+    color: #ccaa41;
+}
+.color3 {
+    color: #cb3527;
+}

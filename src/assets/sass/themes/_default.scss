@@ -1,0 +1,300 @@
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    letter-spacing: 0.05em;
+    color: $color-text;
+    font-family: $font-main;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+a {
+    color: $color-text;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+html,
+body {
+    height: 100%; /*高さを100%にして描画エリアをとる*/
+}
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+//------------ここからHeaderPart----------------->
+// .header {
+//     width: 100%;
+//     z-index: 999;
+//     transition: 0.5s;
+//     .menu {
+//         .pc_menu {
+//             a,
+//             span {
+//                 cursor: pointer;
+//                 margin-left: 30px;
+//                 @include hover-underline("slide", "center");
+//                 &:last-child {
+//                     @include rem(23);
+//                 }
+//             }
+//         }
+//     }
+// }
+//------------//ここまでHeaderPart------------------>
+
+//------------ここからTop----------------->
+// .main {
+//     .main_parts {
+//         position: relative;
+//         background: $color-accent1;
+//         z-index: 3;
+//         height: 65vh;
+//         .main_quiz {
+//             text-decoration: underline;
+//         }
+//         .white_triangle {
+//             position: absolute;
+//             right: 0;
+//             bottom: 0;
+//             width: 0;
+//             height: 0;
+//             z-index: -10;
+//             border: 0 solid transparent;
+//             border-top-width: 55vh;
+//             border-bottom-width: 0;
+//             border-right: 90vw solid #fff;
+//             overflow: hidden;
+//         }
+//     }
+//     .main_scroll {
+//         position: relative;
+//         background: $color-sub;
+//         height: 32vh;
+//         .white_triangle2 {
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             width: 0;
+//             height: 0;
+//             border: 0 solid transparent;
+//             border-left-width: 90vw;
+//             border-right-width: 0;
+//             border-top: 32vh solid #fff;
+//             overflow: hidden;
+//         }
+//     }
+// }
+
+//------------//ここまでTop------------------>
+
+//------------ここからFeature----------------->
+// .feature {
+//     background-image: url("../images/gaming-pattern.png");
+//     .feature_heading {
+//         text-align: center;
+//         &:after {
+//             display: block;
+//             position: absolute;
+//             left: 50%;
+//             border-top: 45px solid #fff;
+//             border-right: 128.5px solid transparent;
+//             border-bottom: 0 solid transparent;
+//             border-left: 128.5px solid transparent;
+//             content: "";
+//             transform: translate3d(-50%, 0, 0);
+//         }
+//         h2 {
+//             position: relative;
+//             &:before {
+//                 content: "";
+//                 display: block;
+//                 background-color: #ff7041;
+//                 position: absolute;
+//             }
+//             &:after {
+//                 content: "";
+//                 display: block;
+//                 background-color: #ff7041;
+//                 position: absolute;
+//             }
+//         }
+//     }
+//     .feature_contents {
+//         background-color: #e2e2e2;
+//         .feature_contents_part {
+//             position: relative;
+//             background-color: #fff;
+//             .part__number {
+//                 position: absolute;
+//                 top: -21px;
+//                 left: 18px;
+//                 &:before {
+//                     position: absolute;
+//                     top: -18px;
+//                     left: -6px;
+//                     content: "POINT";
+//                     @include rem(10);
+//                     font-weight: bold;
+//                 }
+//             }
+//             .part__icon {
+//                 text-align: center;
+//             }
+//             .part__heading {
+//                 line-height: 1.6;
+//                 text-align: center;
+//                 .heading {
+//                     .emphasis {
+//                         .emphasis__quote {
+//                             position: relative;
+//                             top: -4px;
+//                             color: #b7b7b7;
+//                         }
+//                     }
+//                 }
+//             }
+//             .part__body {
+//                 line-height: 2;
+//             }
+//         }
+//     }
+// }
+
+// .number {
+//     width: 48px;
+//     height: 35px;
+// }
+// .icon {
+//     width: 88px;
+//     height: 75px;
+// }
+// .color1 {
+//     color: #5fa300;
+// }
+// .color2 {
+//     color: #ccaa41;
+// }
+// .color3 {
+//     color: #cb3527;
+// }
+
+//------------//ここまでFeature------------------>
+
+//------------ここからHowToUse----------------->
+// .use {
+//     background: #fffac0;
+//     .use_heading {
+//         text-align: center;
+//         h2 {
+//             position: relative;
+//             &:before {
+//                 content: "";
+//                 display: block;
+//                 background-color: #ff7041;
+//                 position: absolute;
+//             }
+//             &:after {
+//                 content: "";
+//                 display: block;
+//                 background-color: #ff7041;
+//                 position: absolute;
+//             }
+//         }
+//     }
+//     .use_contents {
+//         .use_content_part {
+//             img {
+//                 width: 55px;
+//             }
+//             .use_content_part_text {
+//                 width: 34%;
+//                 line-height: 2.2em;
+//                 h3 {
+//                     border-bottom: 1px solid #000;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// .button-text::before,
+// .button-text::after {
+//     content: "";
+//     width: 1px;
+//     height: 40px;
+//     background-color: #000;
+// }
+
+// .button-text::before {
+//     margin-right: 30px;
+//     transform: rotate(-35deg);
+// }
+
+// .button-text::after {
+//     margin-left: 30px;
+//     transform: rotate(35deg);
+// }
+
+// .category_button {
+//     @include rem(18);
+// }
+
+// .arrow-right {
+//     position: relative;
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         top: 50%;
+//         left: 106.1%;
+//         transform: translate(-50%, -50%);
+//         width: 0;
+//         height: 0;
+//         border-style: solid;
+//         border-width: 20px 0 20px 40px;
+//         border-color: transparent transparent transparent #ffed22;
+//     }
+// }
+
+// .arrow-left {
+//     position: relative;
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         top: 50%;
+//         right: 94.5%;
+//         transform: translate(-50%, -50%);
+//         width: 0;
+//         height: 0;
+//         border-style: solid;
+//         border-width: 20px 40px 20px 0;
+//         border-color: transparent #ffed22 transparent transparent;
+//     }
+// }
+
+// .icon {
+//     margin-left: 15px;
+// }
+
+// .margin-bottom {
+//     margin-bottom: 30px;
+// }
+
+// .float {
+//     float: right;
+// }
+//------------ここまでHowToUse----------------->

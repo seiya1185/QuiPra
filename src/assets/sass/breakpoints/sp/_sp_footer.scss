@@ -1,0 +1,15 @@
+footer {
+    .logo {
+        width: 160px;
+    }
+    .footer_text {
+        .footer_text_use {
+            display: none;
+        }
+        .footer_text_copyright {
+            p {
+                @include rem(12)
+            }
+        }
+    }
+}

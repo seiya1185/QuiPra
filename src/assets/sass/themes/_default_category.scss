@@ -1,0 +1,113 @@
+.category {
+    position: relative;
+    background-image: url("../assets/images/gaming-pattern.png");
+    .category_contents {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 85vw;
+        height: 70vh;
+        .category_table {
+            background: $color-white;
+            border: 1px solid;
+            table {
+                width: 85vw;
+                background: $color-white;
+                border-collapse: collapse;
+                tbody tr {
+                    cursor: pointer;
+                }
+                th,
+                td {
+                    border-bottom: 1px solid #eee;
+                    text-align: center;
+                }
+                th {
+                    background-color: #a3ecf9;
+                    border-bottom: 2px solid #6ce1f6;
+                }
+                .category_name {
+                    border-right: 1px solid #eee;
+                    border-left: 1px solid #eee;
+                }
+            }
+        }
+    }
+}
+
+.is-active {
+    border: 3px solid #0e8bdf;
+    background: #fffef3;
+}
+
+.icon {
+    position: absolute;
+    top: calc(50% - 0.5em);
+    right: 0.5rem;
+}
+
+// ----- ボタンの色 -----
+
+.add_color {
+    background: #f5cba8;
+}
+
+.edit_color {
+    background: #fffac0;
+}
+
+.delete_color {
+    background: #d5edd5;
+}
+
+// ------- ボタン色ここまで -------
+
+// ------- モーダルのCSS --------
+#overlay {
+    /* 要素を重ねた時の順番 */
+    z-index: 1;
+
+    /* 画面全体を覆う設定 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: $color-white;
+
+    /* 画面の中央に要素を表示させる設定 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    #modal_content {
+        z-index: 2;
+        .close_modal {
+            position: absolute;
+            cursor: pointer;
+        }
+        .add_form,
+        .update_form {
+            label {
+                display: block;
+            }
+            input[type="text"] {
+                height: 40px;
+                padding: 10px;
+                text-align: center;
+            }
+            select {
+                text-align: center;
+            }
+            button {
+                width: 120px;
+                @include rem(16);
+                background-color: #ffed22;
+                color: $color-text;
+            }
+        }
+    }
+}
