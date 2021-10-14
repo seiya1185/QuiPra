@@ -4,8 +4,8 @@ node_modules
 main.js
 .firebaserc
 firebase.json
-firebase.indexes.json
-firebase.rules
+firestore.indexes.json
+firestore.rules
 
 # local env files
 .env.local
