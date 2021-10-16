@@ -12,3 +12,4 @@ https://quipra-91b04.web.app/<br>
 ・Firebase Hosting<br>
 
 3, 機能、非機能一覧<br>
+・アカウント作成・ログイン機能
