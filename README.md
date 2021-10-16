@@ -1,4 +1,4 @@
-# quipla
+# QuiPra
 
 1, タイトルと概要、URL<br>
 タイトル：QuiPra<br>
