@@ -1,6 +1,5 @@
 <template>
   <section class="main">
-    <p>branch</p>
     <div class="main_parts">
       <div class="main_text">
         <h1>自分で問題を作る。積み上げる。</h1>
